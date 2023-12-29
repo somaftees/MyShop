@@ -1,0 +1,62 @@
+.carousel-caption {
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  .card:hover {
+    transform: translateY(10px);
+}
+
+.container .card {
+  position: relative;
+  animation: l-r 15s linear infinite;
+}
+@keyframes l-r {
+  0%,
+  100% {
+    left: 0%;
+  }
+  50% {
+    left: -30px;
+  }
+}
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4ca68b;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+#scroll-to-top:hover {
+  background-color: #555;
+}
+.navbar navbar-expand-lg navbar-light {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 5px;
+  }
+}
+

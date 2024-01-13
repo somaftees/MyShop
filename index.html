@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css\style.css"/>
+  <link rel="stylesheet" href="css\style.css" />
   <script src="js/script.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <!-- CSS Bootstrap link -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
 
-<!-- jQuery script -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <!-- jQuery script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 
-<!-- Popper.js script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- Popper.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 
-<!-- Bootstrap script -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Bootstrap script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
   <link href="image/iconn.png">
   <title>MyShop</title>
 </head>
@@ -26,222 +30,229 @@
   <!--translate-->
   <div id="google_translate_element"></div>
   <!--Go up-->
-  <button onclick="scrollToTop()" id="scroll-to-top" title="الرجوع لأعلى">&#8679;</button>
+  <button onclick="scrollToTop()" id="scroll-to-top" title="الرجوع لأعلى">&#11165;</button>
   <!--Nav bar section-->
   <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background: #5f8e7f">
-    <div class="container-fluid">
-      <div class="col-md-3">
-      <div class="navbar-brand" style="color:#c3efe3;">
-        <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: 900;">
-        <img src="image\shop.png" width="25px" height="25px"> 
-        MyShop
-        </a>
-      </div>
-      </div>
-    <div class="col-md-3">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="shop.html" style="font-weight:600; color:#c3efe3;">تــســوق</a>
-          <a class="nav-link" href="about.html" style="font-weight:400; color:#c3efe3;">عــن مــتــجــرنــا</a>
-          <a class="nav-link" href="#contact" style="font-weight:100; color:#c3efe3;">تــواصــل مــعــنــا</a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: #5f8e7f">
+      <div class="container-fluid">
+        <div class="col-md-3">
+          <div class="navbar-brand" style="color:#c3efe3;">
+            <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: 900;">
+              <img src="image\shop.png" width="20%" height="20%">
+              MyShop
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="shop.html" style="font-weight:800; color:#c3efe3;">تــســوق</a>
+              <a class="nav-link" href="about.html" style="font-weight:500; color:#c3efe3;">عــن مــتــجــرنــا</a>
+              <a class="nav-link" href="#contact" style="font-weight:300; color:#c3efe3;">تــواصــل مــعــنــا</a>
+              <a class="nav-link" href="login.html" style="font-weight:100; color:#c3efe3;"> تــســجــيــل
+                الــدخــول</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <form class="d-flex" id="search-form" class="form-inline">
+            <input class="form-control me-2" id="search-input" type="text" style="text-align: center;"
+              placeholder="بــحــث" aria-label="بــحــث">
+            <button class="btn btn-outline-light" id="search-button" style="background: #4ca68b"
+              type="submit">بــحــث</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
-    </div>
-          <div class="col-md-3">
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" style="text-align: center;" placeholder="بــحــث" aria-label="بــحــث">
-            <button class="btn btn-outline-success" style="background: #4ca68b" type="submit">بــحــث</button>
-          </form>
-          </div>
-    </div>
-  </nav>
+    </nav>
   </div>
 
   <!--first card section-->
   <div class="container">
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <ul class="carousel-indicators">
-              <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></li>
-              <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></li>
-              <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"></li>
-            </ul>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="image\new.jpeg" class="d-block w-100"width="200px" height="675px">
-              </div>
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="image\bg.jpeg" class="d-block w-100" width="1000px" height="675px">
-                <div class="carousel-caption text-end" style="color: #a9a47b;">
-                  <h3>مــرحــبــاً بــكــم فــي مـــتجــرنــا الإلــكــتــرونــي</h3>
-                  <p> خــدامــات مــمــيــزة لــزبــائــن مــمــيــزيــن</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="image\bg3.jpg" class="d-block w-100" width="1000px" height="675px">
-                <div class="carousel-caption text-end" style="color: #f8f3b8;">
-                  <h3>مــرحــبــاً بــكــم فــي مـــتجــرنــا الإلــكــتــرونــي</h3>
-                  <p> خــدامــات مــمــيــزة لــزبــائــن مــمــيــزيــن</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="1000">
-                <img src="image\bg2.jpg" class="d-block w-100"width="1000px" height="675px">
-                <div class="carousel-caption text-end"style="color: #8e8a5f;">
-                  <h3>مــرحــبــاً بــكــم فــي مـــتجــرنــا الإلــكــتــرونــي</h3>
-                  <p> خــدامــات مــمــيــزة لــزبــائــن مــمــيــزيــن</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="image\new.jpeg" class="d-block w-100" width="200px" height="675px">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="image\bg.jpeg" class="d-block w-100" width="1000px" height="675px">
+          <div class="carousel-caption text-end" style="color: #a9a47b;">
+            <h3>مــرحــبــاً بــكــم فــي مـــتجــرنــا الإلــكــتــرونــي</h3>
+            <p> خــدامــات مــمــيــزة لــزبــائــن مــمــيــزيــن</p>
           </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="image\bg3.jpg" class="d-block w-100" width="1000px" height="675px">
+          <div class="carousel-caption text-end" style="color: #f8f3b8;">
+            <h3>مــرحــبــاً بــكــم فــي مـــتجــرنــا الإلــكــتــرونــي</h3>
+            <p> خــدامــات مــمــيــزة لــزبــائــن مــمــيــزيــن</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="image\bg2.jpg" class="d-block w-100" width="1000px" height="675px">
+          <div class="carousel-caption text-end" style="color: #8e8a5f;">
+            <h3>مــرحــبــاً بــكــم فــي مـــتجــرنــا الإلــكــتــرونــي</h3>
+            <p> خــدامــات مــمــيــزة لــزبــائــن مــمــيــزيــن</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
-  
 
-   <!--SALE section-->
-   <div class="container">
-   <div class="card-group">
-    <div class="card">
-      <img src="image\sale3.jpeg" class="card-img-top" width="75px" height="300px">
-      <div class="card-body">
-        <h5 class="card-title">تــخــفــيــضــات</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+
+  <!--SALE section-->
+  <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <img src="image\sale3.jpeg" class="card-img-top" width="75px" height="300px">
+        <div class="card-body">
+          <h5 class="glow"> 10% تــخــفــيــضــات</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img src="image\sale.jpeg" class="card-img-top"width="75px" height="300px">
-      <div class="card-body">
-        <h5 class="card-title">تــخــفــيــضــات</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <div class="card">
+        <img src="image\sale.jpeg" class="card-img-top" width="75px" height="300px">
+        <div class="card-body">
+          <h5 class="glow"> 25% تــخــفــيــضــات</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet.</p>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img src="image\sale2.jpeg" class="card-img-top"width="75px" height="300px">
-      <div class="card-body">
-        <h5 class="card-title">تــخــفــيــضــات</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <div class="card">
+        <img src="image\sale2.jpeg" class="card-img-top" width="75px" height="300px">
+        <div class="card-body">
+          <h5 class="glow"> 50% تــخــفــيــضــات</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
       <div class="card">
         <img src="image\sale3.jpeg" class="card-img-top" width="75px" height="300px">
-         <div class="card-body">
-           <h5 class="card-title">تــخــفــيــضــات</h5>
-           <p class="card-text">Lorem ipsum dolor sit amet.</p>
-         </div>
-    </div>
+        <div class="card-body">
+          <h5 class="glow"> 75% تــخــفــيــضــات</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
     </div>
   </div>
-          <!--seasons section-->
+  <!--seasons section-->
 
-          <div class="container">
-            <div class="card-group">
-            <div class="card">
-              <img src="image\summer.jpg" class="card-img-top" width="100%" height="100%">
-              <div class="card-body">
-                <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــصــيــف</h5>
-                <p class="card-text"></p>
-                <a href="summer.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="image\spring.jpg" class="card-img-top" width="100%" height="100%">
-              <div class="card-body">
-                <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــربــيــع</h5>
-                <p class="card-text"></p>
-                <a href="spring.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="image\autm.jpg" class="card-img-top" width="100%" height="100%">
-              <div class="card-body">
-                <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــخــريــف</h5>
-                <p class="card-text"></p>
-                <a href="aut.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="image\wint.jpg" class="card-img-top" width="100%" height="100%">
-              <div class="card-body">
-                <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــشــتــاء</h5>
-                <p class="card-text"></p>
-                <a href="win.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
-              </div>
+  <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <img src="image\summer.jpg" class="card-img-top" width="100%" height="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــصــيــف</h5>
+          <p class="card-text"></p>
+          <a href="summer.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image\spring.jpg" class="card-img-top" width="100%" height="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــربــيــع</h5>
+          <p class="card-text"></p>
+          <a href="spring.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image\autm.jpg" class="card-img-top" width="100%" height="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــخــريــف</h5>
+          <p class="card-text"></p>
+          <a href="aut.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image\wint.jpg" class="card-img-top" width="100%" height="100%">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: medium">مــجــمــوعــة الــشــتــاء</h5>
+          <p class="card-text"></p>
+          <a href="win.html" class="btn btn-outline-success" style="font-size: medium">شــاهــد الــمــزيــد</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--contact us section-->
+  <div class="container">
+    <div id="contact">
+      <div class="heading_container ">
+        <h2 class="glowy" style="text-align: center;">
+          Contact Us
+        </h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53581.4370925566!2d12.12197630697865!3d32.92883009144455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a961f3cd613c19%3A0x91852e54e28cdc3c!2z2LLZiNin2LHYqQ!5e0!3m2!1sar!2sly!4v1702836986442!5m2!1sar!2sly"
+                width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-          </div>
-          
+        </div>
 
+        <div class="col-md-3" style="text-align: right;">
+          <form action="https://formspree.io/f/xnqeqqjg" method="POST">
+            <label>
+              الاســم <br>
+              <input type="name" name="name">
+            </label><br>
+            <label>
+              رقــم الــهــاتــف <br>
+              <input type="tel" name="phone">
+            </label><br>
+            <label>
+              الــبــريــد الالــكــتــرونــي<br>
+              <input type="email" name="email">
+            </label><br>
+            <label>
+              مــلاحـظــاتــكــم<br>
+              <textarea name="message"></textarea>
+            </label><br>
+            <button type="submit" style="background-color: #4ca68b;">إرســال</button>
+          </form>
 
-            <!--contact us section-->
-              <div class="container">
-                <div id="contact">
-                <div class="heading_container ">
-                  <h2 style="text-align: center;">
-                    Contact Us
-                  </h2>
-                </div>
-              </div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="map_container">
-                      <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53581.4370925566!2d12.12197630697865!3d32.92883009144455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a961f3cd613c19%3A0x91852e54e28cdc3c!2z2LLZiNin2LHYqQ!5e0!3m2!1sar!2sly!4v1702836986442!5m2!1sar!2sly" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-3" style="text-align: right;">
-                    <form
-                    action="https://formspree.io/f/xnqeqqjg"
-                    method="POST"
-                  >
-                    <label>
-                      الاســم <br>
-                      <input type="name" name="name">
-                    </label><br>
-                    <label>
-                      رقــم الــهــاتــف <br>
-                      <input type="tel" name="phone">
-                    </label><br>
-                    <label>
-                      الــبــريــد الالــكــتــرونــي<br>
-                      <input type="email" name="email">
-                    </label><br>
-                    <label>
-                      مــلاحـظــاتــكــم<br>
-                      <textarea name="message"></textarea>
-                    </label><br>
-                    <button type="submit" style="background-color: #4ca68b;">إرســال</button>
-                  </form>
-
-                  </div>
-                </div>
-              </div>
-              </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--footer-->
   <div class="container">
-  <footer class="footer">
-    <section style="background: #5f8e7f;">
+    <footer class="footer">
+      <section style="background: #5f8e7f;">
         <div class="row">
           <div class="col-md-4" style="text-align: center;">
             <h6 class="fw-bold mb-4">
-             MyShop
+              MyShop
             </h6>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad animi voluptatibus facere perspiciatis cumque mollitia voluptates aliquam itaque quaerat doloribus!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad animi voluptatibus facere perspiciatis cumque
+              mollitia voluptates aliquam itaque quaerat doloribus!
             </p>
           </div>
           <div class="col-md-4" style="text-align: left;">
@@ -253,35 +264,32 @@
             </p>
             <p><i class="fas fa-phone me-3"></i> +218-9********</p>
           </div>
-        <div class="col-md-4" style="text-align: left;">
-          <!--Social Media-->
-          <h6 class="text-uppercase fw-bold mb-4">Social media</h6>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100024645512383&mibextid=hIlR13">
-              <img src="image/fb.png">
-            </a>
-            FaceBook<br>
-            <a href="https://www.instagram.com/so._.ma21?igsh=azg3Y241MWU5dmxv">
-              <img src="image/insta.png">
-            </a>
-            Instagram<br>
-            <a href="https://x.com/SomaFtees?t=CXi1REva-2Xy9yOhAqD6Ow&s=09">
-              <img src="image/x.png">
-            </a>
-            X<br>
-            <a href="https://github.com/somaftees">
-              <img src="image/gb.png" >
-            </a>
-            Github<br>
+          <div class="col-md-4" style="text-align: left;">
+            <!--Social Media-->
+            <h6 class="text-uppercase fw-bold mb-4">Social media</h6>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100024645512383&mibextid=hIlR13">
+                <img src="image/fb.png">
+              </a>
+              <a href="https://www.instagram.com/so._.ma21?igsh=azg3Y241MWU5dmxv">
+                <img src="image/insta.png">
+              </a>
+              <a href="https://x.com/SomaFtees?t=CXi1REva-2Xy9yOhAqD6Ow&s=09">
+                <img src="image/x.png">
+              </a>
+              <a href="https://github.com/somaftees">
+                <img src="image/gb.png">
+              </a>
+            </div>
           </div>
         </div>
-        </div>
-    </section>
-    <div class="text-center p-4" style="background: #5f8e7f; height: 30px;" >
-      Tasnim Ftees&copy; 2023
-    </div>
-    <!-- Copyright -->
-  </footer>
+      </section>
+      <div class="text-center p-4" style="background: #5f8e7f; height: 30px;">
+        Tasnim Ftees&copy; 2023
+      </div>
+      <!-- Copyright -->
+    </footer>
   </div>
 </body>
+
 </html>

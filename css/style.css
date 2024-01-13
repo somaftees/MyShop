@@ -27,7 +27,16 @@
 }
 .nav-link:hover {
   transform: scale(1.1);
+  animation: glowy 2s infinite;
+ 
 }
+.navbar-nav a:hover{
+  background-image: linear-gradient(to right, #4ca68b 0%, rgba(255, 255, 255, 0.86) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 3px;
+}
+
 
 #scroll-to-top {
   display: none;
@@ -39,19 +48,17 @@
   border: none;
   outline: none;
   background-color: #4ca68b;
-  color: #fff;
+  color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 #scroll-to-top:hover {
-  background-color: #555;
+  background-color: #2ca47e;
 }
 .navbar navbar-expand-lg navbar-light {
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -60,3 +67,53 @@
   }
 }
 
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 19px rgb(204, 204, 201);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(194, 50, 10);
+  }
+  100% {
+    text-shadow: 0 0 15px yellow;
+  }
+}
+
+.glow {
+  color: rgb(255, 7, 7);
+  font-size: 1.5em;
+  animation: glow 2s infinite;
+}
+
+@keyframes glowy {
+  0% {
+    text-shadow: 0 0 15px rgb(158, 246, 227);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(10, 182, 194);
+  }
+  100% {
+    text-shadow: 0 0 19px rgb(40, 105, 75);
+  }
+}
+.glowy {
+  color: rgb(20, 133, 97);
+  font-size: 1.5em;
+  animation: glowy 2s infinite;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+}

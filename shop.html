@@ -11,18 +11,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <link href="image/iconn.png">
-  <!-- CSS Bootstrap link -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css">
-
   <!-- jQuery script -->
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-
   <!-- Popper.js script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-
-  <!-- Bootstrap script -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
   <title>Shopping</title>
 </head>
 
@@ -39,7 +31,6 @@
           <div class="navbar-brand" style="color:#c3efe3;">
             <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: 900;">
               <img src="image\shop.png" width="20%" height="20%">
-              MyShop
             </a>
           </div>
         </div>
@@ -76,6 +67,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الأول</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(1)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -83,6 +75,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثاني</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(2)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -90,6 +83,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(3)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -97,6 +91,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الرابع</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(4)">حجز</button>
         </div>
       </div>
     </div>
@@ -110,6 +105,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخامس</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(5)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -117,6 +113,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السادس</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(6)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -124,6 +121,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السابع</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(7)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -131,6 +129,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثامن</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(8)">حجز</button>
         </div>
       </div>
     </div>
@@ -143,6 +142,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض التاسع</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(9)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -150,6 +150,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض العاشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(10)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -157,6 +158,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الحادي عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(11)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -164,6 +166,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثاني عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(12)">حجز</button>
         </div>
       </div>
     </div>
@@ -177,6 +180,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(13)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -184,6 +188,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الرابع عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(14)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -191,6 +196,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخامس عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(15)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -198,6 +204,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السادس عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(16)">حجز</button>
         </div>
       </div>
     </div>
@@ -211,6 +218,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السابع عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(17)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -218,6 +226,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثامن عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(18)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -225,6 +234,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض التاسع عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(19)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -232,6 +242,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض العشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(20)">حجز</button>
         </div>
       </div>
     </div>
@@ -245,6 +256,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الحادي والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(21)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -252,6 +264,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثاني والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(22)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -259,6 +272,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(23)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -266,6 +280,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الرابع والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(24)">حجز</button>
         </div>
       </div>
     </div>
@@ -278,6 +293,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخامس والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(25)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -285,6 +301,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السادس والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(26)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -292,6 +309,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السابع والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(27)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -299,6 +317,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثامن والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(28)">حجز</button>
         </div>
       </div>
     </div>
@@ -312,6 +331,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض التاسع والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(29)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -319,6 +339,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(30)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -326,6 +347,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الحادي وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(31)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -333,6 +355,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثاني وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(32)">حجز</button>
         </div>
       </div>
     </div>
@@ -346,6 +369,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(33)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -353,6 +377,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الرابع وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(34)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -360,6 +385,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخامس وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(35)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -367,6 +393,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السادس وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(36)">حجز</button>
         </div>
       </div>
     </div>
@@ -380,6 +407,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السابع وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(37)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -387,6 +415,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثامن وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(38)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -394,6 +423,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض التاسع وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(39)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -401,6 +431,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(40)">حجز</button>
         </div>
       </div>
     </div>
@@ -413,6 +444,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الحادي وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(41)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -420,6 +452,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثاني وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(42)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -427,6 +460,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(43)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -434,6 +468,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الرابع وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(44)">حجز</button>
         </div>
       </div>
     </div>
@@ -447,6 +482,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخامس وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(45)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -454,6 +490,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السادس وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(46)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -461,6 +498,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السابع وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(47)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -468,6 +506,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثامن وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(48)">حجز</button>
         </div>
       </div>
     </div>
@@ -481,6 +520,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض التاسع وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(49)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -488,6 +528,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(50)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -495,6 +536,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الحادي وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(51)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -502,6 +544,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثاني وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(52)">حجز</button>
         </div>
       </div>
     </div>
@@ -515,6 +558,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(53)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -522,6 +566,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الرابع وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(54)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -529,6 +574,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الخامس وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(55)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -536,6 +582,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السادس وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(56)">حجز</button>
         </div>
       </div>
     </div>
@@ -548,6 +595,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض السابع وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(57)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -555,6 +603,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(58)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -562,6 +611,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض التاسع وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(59)">حجز</button>
         </div>
       </div>
       <div class="card">
@@ -569,6 +619,7 @@
         <div class="card-body">
           <h5 class="card-title">العرض الستون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-success" onclick="bookReservation(60)">حجز</button>
         </div>
       </div>
     </div>

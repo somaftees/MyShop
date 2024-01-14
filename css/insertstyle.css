@@ -2,100 +2,106 @@
   0% {
     text-shadow: 0 0 15px rgb(158, 246, 227);
   }
+
   50% {
     text-shadow: 0 0 20px rgb(10, 182, 194);
   }
+
   100% {
     text-shadow: 0 0 19px rgb(40, 105, 75);
   }
 }
 
 form {
-    max-width: 400px;
-    margin-top: 20px;
-  }
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  button {
-    background-color: #4ca68b;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
-  .insert {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 10px;
-    font-family: Arial, sans-serif;
-    border-radius: 0;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+  max-width: 400px;
+  margin-top: 20px;
+}
 
-  input[type="text"],
-  input[type="number"],
-  input[type="file"] {
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.insert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.bttn  {
+  background: #4ca68b;
+  border-radius: 3px;
+  color: rgb(252, 252, 252);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-color: rgb(253, 253, 253);
+}
+.bttn:hover{
+  transform: scale(1.1);
+  animation: glowy 2s;
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  animation: glowy 2s infinite;
+
+}
+
+.navbar-nav a:hover {
+  background-image: linear-gradient(to right, #4ca68b 0%, rgba(255, 255, 255, 0.86) 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 3px;
+}
+
+.navbar navbar-expand-lg navbar-light {
+  position: fixed;
+  top: 0;
+}
+
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4ca68b;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#scroll-to-top:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .navbar {
     padding: 5px;
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
   }
-
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4ca68b;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-
-  button[type="submit"]:hover {
-    background-color: #45a088;
-  }
-
-  .carousel-caption {
-    transform: translateY(-50%);
-    top: 50%;
-  }
-  .nav-link:hover {
-    transform: scale(1.1);
-    animation: glowy 2s infinite;
-  }
-  
-  #scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #4ca68b;
-    color: #fff;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-  }
-  #scroll-to-top:hover {
-    background-color: #555;
-  }
-  .navbar navbar-expand-lg navbar-light {
-    position: fixed;
-    top: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar {
-        padding: 5px;
-    }
-  }
+}

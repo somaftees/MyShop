@@ -63,14 +63,19 @@
         alert("تمت إضافة المنتج بنجاح!");
       });
 
-      $(document).ready(function() {
-        $('.navbar-toggler').click(function() {
-          $('.navbar-collapse').slideToggle();
-        });
-      });
+      //collapse
       function bookReservation(cardNumber) {
         // قم بتنفيذ الإجراء المرتبط بالحجز للبطاقة المحددة
         // يمكنك استخدام قواعد الأعمال الخاصة بك هنا
         alert("تم حجز البطاقة رقم: " + cardNumber);
         // يمكنك استبدال سطر الطباعة بالتعليمات اللازمة لعملية الحجز الفعلية
       }
+function toggleMenu() {
+  var navbarMenu = document.getElementById("navbar-menu");
+  navbarMenu.classList.toggle("reverse-direction");
+  if (navbarMenu.style.display === "block") {
+    navbarMenu.style.display = "none";
+  } else {
+    navbarMenu.style.display = "block";
+  }
+}

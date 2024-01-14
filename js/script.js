@@ -40,21 +40,19 @@
       }
       else
       alert("اسم المستخدم او كلمة المرور خاطئان")
-      }
-
-      document.getElementById("productForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // منع إرسال النموذج
-  
+      };
+        document.getElementById("productForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // منع إرسال النموذج
         // استخراج قيم المدخلات
         var productName = document.getElementById("productName").value;
         var productPrice = document.getElementById("productPrice").value;
         var productImage = document.getElementById("productImage").value;
   
         // قم بإجراء التحقق من صحة المدخلات هنا
-        if (productName === "" || productPrice === "" || productImage === "") {
-          alert("يرجى تعبئة جميع الحقول");
-          return;
-        }
+        //if (productName === "" || productPrice === "" || productImage === "") {
+          //alert("يرجى تعبئة جميع الحقول");
+          //return;
+        //}
   
         // معالجة البيانات هنا
   
@@ -64,3 +62,15 @@
         // عرض رسالة للتأكيد أو إعادة التوجيه إلى صفحة أخرى
         alert("تمت إضافة المنتج بنجاح!");
       });
+
+      $(document).ready(function() {
+        $('.navbar-toggler').click(function() {
+          $('.navbar-collapse').slideToggle();
+        });
+      });
+      function bookReservation(cardNumber) {
+        // قم بتنفيذ الإجراء المرتبط بالحجز للبطاقة المحددة
+        // يمكنك استخدام قواعد الأعمال الخاصة بك هنا
+        alert("تم حجز البطاقة رقم: " + cardNumber);
+        // يمكنك استبدال سطر الطباعة بالتعليمات اللازمة لعملية الحجز الفعلية
+      }

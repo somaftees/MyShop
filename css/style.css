@@ -46,8 +46,47 @@
   .navbar {
       padding: 5px;
   }
+  .navbar-toggle {
+    flex-direction: row-reverse;
+  }
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.navbar-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    display: none; 
+    flex-direction: row-reverse;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+.reverse-direction {
+  flex-direction: row-reverse;
+}
 #scroll-to-top {
   display: none;
   position: fixed;

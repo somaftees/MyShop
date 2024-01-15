@@ -84,9 +84,6 @@
     display: block;
   }
 }
-.reverse-direction {
-  flex-direction: row-reverse;
-}
 #scroll-to-top {
   display: none;
   position: fixed;
@@ -163,4 +160,10 @@
   color: #ff5252;
   font-weight: bold;
   text-decoration: line-through;
+}
+
+/* إزالة الخط السفلي للروابط */
+a:hover, a:visited, a:focus {
+  color: black;
+  text-decoration: none;
 }

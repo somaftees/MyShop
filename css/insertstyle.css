@@ -120,9 +120,7 @@ input[type="file"] {
     display: block;
   }
 }
-.reverse-direction {
-  flex-direction: row-reverse;
-}
+
 #scroll-to-top {
   display: none;
   position: fixed;

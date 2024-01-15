@@ -33,30 +33,56 @@
             <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: 900;">
               <img src="image\shop.png" width="20%" height="20%" style="margin-right: 10px;" alt="...">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggle" onclick="toggleMenu()"><span class="navbar-toggler-icon"></span></button>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="shop.html" style="font-weight:800; color:#c3efe3;">تــســوق</a>
-              <a class="nav-link" href="about.html" style="font-weight:500; color:#c3efe3;">عــن مــتــجــرنــا</a>
-              <a class="nav-link" href="#contacti index.html" style="font-weight:300; color:#c3efe3;">تــواصــل
-                مــعــنــا</a>
+              <ul class="navbar-menu" id="navbar-menu">
+              <li><a class="nav-link" href="shop.html" style="font-weight:800; color:#c3efe3;">تــســوق</a></li>
+              <li><a class="nav-link" href="about.html" style="font-weight:500; color:#c3efe3;">عــن مــتــجــرنــا</a></li>
+              <li><a class="nav-link" href="index.html #contact" style="font-weight:300; color:#c3efe3;">تــواصــل
+                مــعــنــا</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-md-1">
+          <img src="image/search.png" style="margin-left: 150px;">
+        </div>
+        <div class="col-md-2">
+          <div class="search-box">
+            <input type="text" placeholder="Search" onkeyup="search()" oninput="search()" class="search-input" style="width: 100%; height: 1px solid; border: 1px solid #ccc; border-color: rgb(253, 253, 253); align-items: center; outline: none; padding: 5px; border-radius: 3px; display: flex; flex-direction: row;">
+          </div>
+          <div class="product-list" style="display: none; padding: 20px 0;">
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="win.html">مجموعة الشتاء</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="summer.html">مجموعة الصيف</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="aut.html">مجموعة الخريف</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="spring.html">مجموعة الربيع</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="index.html #sale"> تخفيضات</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="index.html #contact"> تواصل معنا</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="shop.html"> تسوق</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="login.html"> تسجيل الدخول</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="about.html"> عن متجرنا </a>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <form class="d-flex" id="search-form" class="form-inline">
-            <input class="form-control me-2" id="search-input" type="text" style="text-align: center;"
-              placeholder="بــحــث" aria-label="بــحــث">
-            <button class="btn btn-outline-light" id="search-button" style="background: #4ca68b"
-              type="submit">بــحــث</button>
-          </form>
-        </div>
+      </div>
       </div>
     </nav>
   </div>

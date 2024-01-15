@@ -32,29 +32,59 @@
             <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: 900;">
               <img src="image\shop.png" width="20%" height="20%">
             </a>
+            <button class="navbar-toggle" onclick="toggleMenu()"><span class="navbar-toggler-icon"></span>
+            </button>
           </div>
         </div>
         <div class="col-md-4">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="index.html" style="font-weight:800; color:#c3efe3;">الــرئــيــســيــة</a>
-              <a class="nav-link" href="about.html" style="font-weight:500; color:#c3efe3;">عــن مــتــجــرنــا</a>
-              <a class="nav-link" href="index.html #contact" style="font-weight:100; color:#c3efe3;">تــواصــل
-                مــعــنــا</a>
-            </div>
+          <div class="navbar-nav">
+            <ul class="navbar-menu" id="navbar-menu">
+              <li><a class="nav-link" href="index.html" style="font-weight:800; color:#c3efe3;">الــرئــيــســيــة</a>
+              </li>
+              <li><a class="nav-link" href="about.html" style="font-weight:500; color:#c3efe3;">عــن مــتــجــرنــا</a>
+              </li>
+              <li><a class="nav-link" href="index.html #contact" style="font-weight:100; color:#c3efe3;">تــواصــل
+                  مــعــنــا</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-3">
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" style="text-align: center;" placeholder="بــحــث"
-              aria-label="بــحــث">
-            <button class="btn btn-outline-light" style="background: #4ca68b" type="submit">بــحــث</button>
-          </form>
+        <div class="col-md-1">
+          <img src="image/search.png" style="margin-left: 150px;">
         </div>
+        <div class="col-md-2">
+          <div class="search-box">
+            <input type="text" placeholder="Search" onkeyup="search()" oninput="search()" class="search-input" style="width: 100%; height: 1px solid; border: 1px solid #ccc; border-color: rgb(253, 253, 253); align-items: center; outline: none; padding: 5px; border-radius: 3px; display: flex; flex-direction: row;">
+          </div>
+          <div class="product-list" style="display: none; padding: 20px 0;">
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="win.html">مجموعة الشتاء</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="summer.html">مجموعة الصيف</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="aut.html">مجموعة الخريف</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="spring.html">مجموعة الربيع</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="index.html #sale"> تخفيضات</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="index.html #contact"> تواصل معنا</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="shop.html"> تسوق</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="login.html"> تسجيل الدخول</a>
+            </div>
+            <div class="product-detail" style="font-size: 20px;">
+              <a href="about.html"> عن متجرنا </a>
+            </div>
+          </div>
+      </div>
       </div>
     </nav>
   </div>
@@ -63,7 +93,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image/w1.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image/w1.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الأول</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -71,7 +101,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image/w2.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image/w2.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثاني</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -79,7 +109,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image/w3.jpeg" width="100%" height="300px">
+        <img src="image/w3.jpeg" width="100%" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -87,7 +117,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image/w4.jpeg" width="100%" height="300px">
+        <img src="image/w4.jpeg" width="100%" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الرابع</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -101,7 +131,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\w5.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w5.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخامس</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -109,7 +139,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w6.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w6.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السادس</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -117,7 +147,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w7.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w7.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السابع</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -125,7 +155,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w8.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w8.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثامن</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -138,7 +168,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\w9.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w9.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض التاسع</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -146,7 +176,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w10.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w10.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض العاشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -154,7 +184,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w11.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w11.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الحادي عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -162,7 +192,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w12.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w12.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثاني عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -176,7 +206,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\w13.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w13.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -184,7 +214,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w14.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w14.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الرابع عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -192,7 +222,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w15.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w15.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخامس عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -200,7 +230,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\w16.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\w16.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السادس عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -214,7 +244,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image/a17.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image/a17.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السابع عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -222,7 +252,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image/a18.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image/a18.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثامن عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -230,7 +260,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a19.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a19.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض التاسع عشر</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -238,7 +268,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a20.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a20.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض العشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -252,7 +282,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\a21.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a21.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الحادي والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -260,7 +290,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a22.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a22.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثاني والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -268,7 +298,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a23.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a23.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -276,7 +306,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a24.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a24.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الرابع والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -289,7 +319,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\a25.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a25.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخامس والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -297,7 +327,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a26.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a26.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السادس والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -305,7 +335,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a27.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a27.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السابع والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -313,7 +343,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a28.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a28.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثامن والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -327,7 +357,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\a29.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a29.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض التاسع والعشرون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -335,7 +365,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a30.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a30.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -343,7 +373,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a31.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a31.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الحادي وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -351,7 +381,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\a32.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\a32.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثاني وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -365,7 +395,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\ms33.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms33.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -373,7 +403,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms34.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms34.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الرابع وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -381,7 +411,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms35.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms35.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخامس وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -389,7 +419,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms36.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms36.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السادس وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -403,7 +433,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\ms37.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms37.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السابع وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -411,7 +441,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms38.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms38.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثامن وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -419,7 +449,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms39.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms39.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض التاسع وثلاثون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -427,7 +457,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms40.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms40.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -440,7 +470,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\ms41.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms41.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الحادي وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -448,7 +478,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms42.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms42.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثاني وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -456,7 +486,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms43.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms43.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -464,7 +494,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms44.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms44.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الرابع وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -478,7 +508,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\ms45.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms45.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخامس وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -486,7 +516,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms46.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms46.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السادس وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -494,7 +524,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms47.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms47.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السابع وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -502,7 +532,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\ms48.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\ms48.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثامن وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -516,7 +546,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\s49.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s49.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض التاسع وأربعون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -524,7 +554,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s50.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s50.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -532,7 +562,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s51.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s51.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الحادي وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -540,7 +570,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s52.jpg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s52.jpg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثاني وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -554,7 +584,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\s53.jpg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s53.jpg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -562,7 +592,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s54.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s54.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الرابع وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -570,7 +600,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s55.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s55.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الخامس وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -578,7 +608,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s56.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s56.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السادس وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -591,7 +621,7 @@
   <div class="container">
     <div class="card-group">
       <div class="card">
-        <img src="image\s57.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s57.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض السابع وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -599,7 +629,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s58.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s58.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الثالث وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -607,7 +637,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s59.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s59.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض التاسع وخمسون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>
@@ -615,7 +645,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="image\s60.jpeg" class="card-img-top" width="75px" height="300px">
+        <img src="image\s60.jpeg" class="card-img-top" width="75px" height="300px" alt="...">
         <div class="card-body">
           <h5 class="card-title">العرض الستون</h5>
           <p class="card-text">Lorem ipsum dolor sit amet.</p>

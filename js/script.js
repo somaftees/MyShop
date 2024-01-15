@@ -1,5 +1,4 @@
 
-//////////////////////////////////////////////////
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
@@ -72,10 +71,27 @@
       }
 function toggleMenu() {
   var navbarMenu = document.getElementById("navbar-menu");
-  navbarMenu.classList.toggle("reverse-direction");
   if (navbarMenu.style.display === "block") {
     navbarMenu.style.display = "none";
   } else {
     navbarMenu.style.display = "block";
+  }
+}
+function search() {
+  let searchBar = document.querySelector('.search-input').value.toLowerCase();
+  let productlist = document.querySelector('.product-list');
+  let productdetail = document.querySelectorAll('.product-detail');
+
+  if (searchBar === "") {
+    productlist.style.display = "none";
+  } else {
+    productlist.style.display = "";
+    for (let i = 0; i < productdetail.length; i++) {
+      if (productdetail[i].innerHTML.toLowerCase().indexOf(searchBar) >= 0) {
+        productdetail[i].style.display = "";
+      } else {
+        productdetail[i].style.display = "none";
+      }
+    }
   }
 }
